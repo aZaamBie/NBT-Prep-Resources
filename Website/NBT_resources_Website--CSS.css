@@ -1,0 +1,41 @@
+.Heading{
+	 -webkit-font-smoothing: antialiased;
+	 background-color: #bdbab1;
+	 color: Black;
+	 text-align: center;
+	 border: 2px solid #bdbab1;
+}
+
+.TopNav{
+	color: violet;
+	text-align: center;
+	/*background-color: beige; */
+	background-color: #f5f5dc;
+	border: 1px solid #f5f5dc;
+}
+
+#Youtube{
+	text-align: center;
+}
+
+#ExemplarQs{
+	text-align: center;
+}
+
+#ExemplarQs li{
+	list-style: none;
+    padding: 2px;
+}
+
+/*ul {
+text-align: center;
+}
+
+li {
+text-align: center;
+}*/
+
+.Footer{
+	background-color: #c4c4af;
+	border: 2px solid #c4c4af;
+}
