@@ -4,6 +4,8 @@
 	 color: Black;
 	 text-align: center;
 	 border: 2px solid #bdbab1;
+	 margin-left: 0px;
+	 margin-right: 0px;
 }
 
 .TopNav{
@@ -12,19 +14,57 @@
 	/*background-color: beige; */
 	background-color: #f5f5dc;
 	border: 1px solid #f5f5dc;
+
+	padding: 5px;
+ 	padding-size:cover;
 }
 
-#Youtube{
-	text-align: center;
+.What{
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 30px;
 }
 
 #ExemplarQs{
 	text-align: center;
+	margin-bottom: 30px;
 }
 
 #ExemplarQs li{
 	list-style: none;
     padding: 2px;
+}
+
+#PDFs{
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#PDFs li{
+	list-style: none;
+    padding: 2px;
+}
+
+#Youtube_{
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top: 50px;
+
+}
+
+#Youtube_ li{
+	list-style-position: inside;
+/*	list-style: none;*/
+}
+
+
+
+h2{
+	background-color: #146aff;
+	border: 1px solid #146aff;
+	display: inline-block; /* THIS WORKS ATM */
+/*	display: inline-table;*/
+	text-align: center;
 }
 
 /*ul {
@@ -35,7 +75,16 @@ li {
 text-align: center;
 }*/
 
+
+#MoreResources{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
 .Footer{
 	background-color: #c4c4af;
 	border: 2px solid #c4c4af;
+
+/*	Padding*/
+	padding-left: 2px;
 }
