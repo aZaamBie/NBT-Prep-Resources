@@ -35,6 +35,15 @@
     padding: 2px;
 }
 
+#Courses{
+	text-align: center;
+	margin-bottom: 50px;
+}
+#Courses li{
+	list-style: none;
+    padding: 1px;
+}
+
 #PDFs{
 	text-align: center;
 	margin-bottom: 30px;
@@ -65,6 +74,10 @@ h2{
 	display: inline-block; /* THIS WORKS ATM */
 /*	display: inline-table;*/
 	text-align: center;
+}
+
+h3{
+	pointer-events: none;
 }
 
 /*ul {
