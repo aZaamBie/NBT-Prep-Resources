@@ -3,7 +3,7 @@
 	 background-color: #bdbab1;
 	 color: Black;
 	 text-align: center;
-	 border: 2px solid #bdbab1;
+	 border: 2px solid #bdbab1; /* 2px */
 	 margin-left: 0px;
 	 margin-right: 0px;
 }
@@ -13,7 +13,7 @@
 	text-align: center;
 	/*background-color: beige; */
 	background-color: #f5f5dc;
-	border: 1px solid #f5f5dc;
+	border: 2px solid #f5f5dc;
 
 	padding: 5px;
  	padding-size:cover;
