@@ -6,6 +6,13 @@
 	 border: 2px solid #bdbab1; /* 2px */
 	 margin-left: 0px;
 	 margin-right: 0px;
+
+
+	 margin: 0px;
+	 width: 100%;
+	 min-width: 100%;
+	 padding: 5px;
+	 padding-size:cover;
 }
 
 .TopNav{
@@ -15,6 +22,9 @@
 	background-color: #f5f5dc;
 	border: 2px solid #f5f5dc;
 
+
+	width: 100%;
+	min-width: 100%;
 	padding: 5px;
  	padding-size:cover;
 }
@@ -100,4 +110,7 @@ text-align: center;
 
 /*	Padding*/
 	padding-left: 2px;
+
+	width: 100%;
+
 }
