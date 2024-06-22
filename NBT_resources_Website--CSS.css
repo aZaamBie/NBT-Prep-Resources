@@ -1,39 +1,227 @@
+
+/* BASICS */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+
+    margin: 0%;
+    padding: 0%;
+    /* background-color: #5c5360; */ /* ORIGINAL */
+    height: 100%;
+    width: 100%;
+
+    background-repeat: no-repeat; /* KEEP THIS! Without this, the gradient repeats*/
+    background-attachment: fixed;
+
+    /* display: flex; */ /* puts EVERYTHING in center */
+	/* background-color: #EAE7DC; */
+	background-color: #A8D0E6; /* Calmer colour pallete*/
+
+	/* STUFF  */
+    /* margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+	
+	display: table;
+  	margin-right: auto;
+  	margin-left: auto;
+
+	/* width: 80%;
+	margin: 0 auto; */
+}
+
+
 .Heading{
 	 -webkit-font-smoothing: antialiased;
-	 background-color: #bdbab1;
-	 color: Black;
+	 background-color: #374875;/* #bdbab1; */
+	 /* color: Black; */
+	 color: aliceblue;
 	 text-align: center;
-	 border: 2px solid #bdbab1; /* 2px */
-	 margin-left: 0px;
-	 margin-right: 0px;
+	 
+	 border: 1px solid #374875;
+	 /* margin: 0px; */
 
-
-	 margin: 0px;
 	 width: 100%;
 	 min-width: 100%;
-	 padding: 5px;
-	 padding-size:cover;
+	 padding: 0px; /* 5 px */
+
+	 margin:auto;
+	 background-size: auto;
+	 /* position: fixed;  */ /* IGNORES FORMATTING. ONLY USE FOR COVERING WHOLE SCREEN*/
 }
 
 .TopNav{
-	color: violet;
+	color: aliceblue; /*violet; */
 	text-align: center;
 	/*background-color: beige; */
-	background-color: #f5f5dc;
-	border: 2px solid #f5f5dc;
+	/* background-color: #f5f5dc; */
+	background-color: #2d3b61;
 
 
 	width: 100%;
-	min-width: 100%;
-	padding: 5px;
- 	padding-size:cover;
+	padding: 0px;
+
+	padding-top: 1%;
+	padding-bottom: 1%;
+
+	margin: auto;
+	overflow: hidden;
+
+	align-items: center; /* centers elements*/
+    /* display: flex; */
+    display: block; /* block */
 }
 
+.TopNav a{
+	color: rgb(206, 213, 220);
+	padding: 1%;
+	/* padding-top: 50%; */
+	font-size: 18px;
+}
+.TopNav a:hover{
+	color: black;
+	background-color: whitesmoke;
+}
+
+/* GENERAL HEADERS */
+
+h2{
+	color: #24305E;
+
+	background-color:rgb(220, 219, 219);
+    border: 2px solid rgb(220, 219, 219);
+    border-radius: 5px;
+
+	/* ORIGINAL */
+    width: 20%;
+	/* NEW*/
+	width: fit-content;
+
+	padding: 5px; 
+
+	margin: auto;
+	margin-top: 1%;
+	margin-bottom: 1%;
+
+    text-align: center;
+}
+
+h3{
+	color: #111c4a;
+
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+
+	border: 2px solid;
+	border-radius: 5px;
+	padding: 5px;
+    width: 20%; 
+	
+	margin: auto; 
+	margin-top: 1%;
+	margin-bottom: 1%;
+
+    text-align: center;
+}
+
+h4{
+	margin-top: 4%;
+	margin-bottom: 1%;
+	/* padding-bottom: 100px; */
+}
+
+
+/* BODY CONTENT */
+
 .What{
+	text-align: center;
+
 	margin-left: 20px;
 	margin-right: 20px;
 	margin-bottom: 30px;
+	/* background-color: cadetblue; */
+
+	/* position: absolute; */
+	margin: 0 auto;
+	width: 50%; /* CENTER */ /* 50% */
+
+	/* display: flex;
+	justify-content: center; */
 }
+
+.What dt{
+	text-align: center;
+	background-color: #bde4f9;
+	font-size: 20px;
+
+	border-radius: 3px;
+	margin-bottom: 10px;
+	/* width: fit-content; */
+}
+
+dl {
+	background-color: #809cec;
+	align-items: center;
+	text-align: center;
+
+	border-radius: 3px;
+	/* padding-left: 10px;
+	padding-right: 10px; */
+
+	/* top: 50%; */
+    /* left: 50%; */
+    /* -ms-transform: translate(-50%, -50%); */
+    /* transform: translate(-50%, -50%); */
+
+	/* CENTERING */
+	border-radius: 2%;
+	/* width: 50%; */
+	margin: 0 auto;
+	/* margin-bottom: 10px; */
+}
+
+ul{
+	align-items: center;
+	text-align: center;
+	margin: 0 auto;
+
+	display: inline-block;
+
+}
+
+/* titles/headers with logos */
+
+.contentTitleLogo{
+	/* display: flex;
+	align-items: center; */
+
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	justify-content:center;
+
+	/* border: 1px solid; */
+	/* border-radius: 1%; */
+	/* width: fit-content; */
+}
+
+.contentTitleLogo img{
+	padding: 0px;
+	width: 10%;
+}
+
+.contentTitleLogo h3{
+	width: auto;
+	margin: 0%;
+	margin-left: 1%;
+	border: 1px solid;
+}
+
+/*  */
+
 
 #ExemplarQs{
 	text-align: center;
@@ -55,8 +243,15 @@
 }
 
 #PDFs{
+	/* color: #24305E; */
 	text-align: center;
 	margin-bottom: 30px;
+	/* display: flex; */
+	/* display: grid; */
+	align-items: center; 
+
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 5px;
 }
 
 #PDFs li{
@@ -79,10 +274,9 @@
 
 
 h2{
-	background-color: #146aff;
-	border: 1px solid #146aff;
+	background-color: #F8E9A1; /* #146aff */
+	border: 1px solid #F8E9A1;
 	display: inline-block; /* THIS WORKS ATM */
-/*	display: inline-table;*/
 	text-align: center;
 }
 
@@ -98,19 +292,121 @@ li {
 text-align: center;
 }*/
 
+/* dl {
+	background-color: #809cec;
+	align-items: center;
+	text-align: center;
 
-#MoreResources{
+	border-radius: 3px;
+
+	width: 50%;
+	/* top: 50%; */
+    /* left: 50%; */
+    /* -ms-transform: translate(-50%, -50%); */
+    /* transform: translate(-50%, -50%); } */
+
+li {
+	/* background-color: #93abed; */
+	align-items: center;
+	text-align: center;
+}
+
+/* BREAK */
+
+#MoreResources{ /* CIRCULAR SECTION */
 	margin-left: 20px;
 	margin-right: 20px;
+
+	background-color: #93abed;
+	border-radius: 90%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+
+	width: 75%;
+	/* CENTERING */
+	/* border-radius: 2%; */
+	/* width: 50%; */
+	margin: 0 auto;
 }
+
+/* BREAK */
+
+#ExtraNotes{
+	/* margin-left: 20px;
+	margin-right: 20px; */
+
+	background-color: #93abed;
+
+	margin: 0 auto;
+	/* CENTER */
+	width: 50%;
+
+	/* display: inline-block; */
+}
+
+#MyExperience{
+	text-align: center;
+	padding-top: 1%;
+	padding-bottom: 1%;
+
+	border-radius: 2%;
+
+	width: 50%;
+	margin: 0 auto;
+
+	background-color: #93abed ;
+}
+
+
+/* FOOTER: END OF WEBSITE */
 
 .Footer{
 	background-color: #c4c4af;
-	border: 2px solid #c4c4af;
-
-/*	Padding*/
-	padding-left: 2px;
+	border: 1px solid #c4c4af;
 
 	width: 100%;
 
+	/* padding-top: 1%;
+	padding-bottom: 1%; */
+	margin-top: 1%;
+}
+
+.Footer a{
+	color: #614e24;
+}
+
+.Footer a:hover{
+	color: black;
+	background-color: whitesmoke;
+}
+
+.disclaimer {
+	background-color: #99998b;
+	border-radius: 2%;
+	padding: 10px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+
+	/* width: 70%; */
+	/* align-items: center; */
+
+	/* width: 50%;
+    padding: 10px; */
+
+	/* STUFF  */
+    /* margin: auto; */
+    /* position: absolute; */
+    /* top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+}
+
+#myLink a{
+	color: #614e24;
+}
+
+#myLink a:hover{
+	color: rgb(0, 136, 255);
+	background-color: whitesmoke;
 }
