@@ -50,8 +50,11 @@ body{
 
 	 margin:auto;
 	 background-size: auto;
-	 /* position: fixed;  */ /* IGNORES FORMATTING. ONLY USE FOR COVERING WHOLE SCREEN*/
-}
+	 
+	 /* this display below causes weird bug, where colour not appearing */
+	 /* display: unset; */
+	 /* display: initial; */
+	}
 
 .TopNav{
 	color: aliceblue; /*violet; */
@@ -71,8 +74,12 @@ body{
 	overflow: hidden;
 
 	align-items: center; /* centers elements*/
-    /* display: flex; */
-    display: block; /* block */
+    display: block; 
+
+	/* STICK TO TOP OF PAGE */
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
 }
 
 .TopNav a{
